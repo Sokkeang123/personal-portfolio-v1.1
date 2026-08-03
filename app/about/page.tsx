@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const navigation = [
@@ -50,9 +51,11 @@ export default function AboutHero() {
               <div className="relative group">
                 {/* Glow ring under photo */}
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 opacity-75 blur-md group-hover:opacity-100 transition duration-300"></div>
-                <img
+                <Image
                   src="/keang.png"
                   alt="Sokkeang Profile Photo"
+                  width={320}
+                  height={320}
                   className="relative h-64 w-64 rounded-full object-cover shadow-2xl ring-2 ring-white/20 sm:h-80 sm:w-80"
                 />
               </div>

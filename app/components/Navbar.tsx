@@ -4,12 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// const navItems = [
+//   { name: "About Me", href: "/about" },
+//   { name: "Education", href: "/education" },
+//   { name: "Experience", href: "/experience" },
+//   // { name: "Skills", href: "/skills" },
+//   { name: "Projects", href: "/projects" },
+// ];
 const navItems = [
-  { name: "About Me", href: "/about" },
-  { name: "Education", href: "/education" },
-  { name: "Experience", href: "/experience" },
-  // { name: "Skills", href: "/skills" },
-  { name: "Projects", href: "/projects" },
+  { name: "About Me", href: "#about" },
+  { name: "Education", href: "#education" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
 ];
 
 export default function Navbar() {
